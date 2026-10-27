@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kelvoh Loves Joy ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#612453,#21102f 55%,#090611);color:white;text-align:center;font-family:Georgia,serif;min-height:100vh;overflow-x:hidden}
+main{position:relative;z-index:1;max-width:850px;margin:auto;padding:28px 16px 45px}.tag{letter-spacing:3px;color:#ffe0a2;font:12px Arial;border:1px solid #ffffff55;border-radius:30px;padding:9px 15px;display:inline-block}
+h1{font-size:clamp(2.5rem,9vw,5rem);text-shadow:0 0 12px #ff4e9c,0 0 34px #ff2088;animation:glow 2s alternate infinite;margin:24px 0 10px}
+@keyframes glow{to{text-shadow:0 0 22px #ff9aca,0 0 48px #ff2088}}.sub{color:#f8d8ed}
+.frame{width:min(88vw,370px);margin:25px auto 15px;padding:8px;border-radius:22px;background:linear-gradient(135deg,#fff1b8,#ff5ca8,#a77bff);box-shadow:0 0 32px #ff4f9a77}
+img{width:100%;max-height:580px;object-fit:cover;display:block;border-radius:15px}.caption{font-size:1.25rem;color:#ffdfa0}
+.panel{max-width:620px;margin:20px auto;padding:22px 18px;background:#ffffff10;border:1px solid #ffffff33;border-radius:20px}h2{color:#ffd3e7}audio{width:100%}.small{font:13px/1.6 Arial;color:#e8d8ed}
+button{border:0;border-radius:30px;padding:13px 20px;margin:8px;background:linear-gradient(100deg,#ff4f9a,#a66bff);color:white;font-weight:bold;font-size:15px;cursor:pointer}
+#letter{display:none;text-align:left;white-space:pre-line;line-height:1.8;color:#ffe9f4}.float{position:fixed;bottom:-35px;z-index:0;pointer-events:none;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}footer{font:12px Arial;letter-spacing:1px;color:#d7bdd9;margin-top:25px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head><body><main>
+<div class="tag">A LITTLE WORLD MADE FOR YOU</div>
+<h1>KELVOH <span style="color:#ff9ac9">LOVES</span> JOY</h1><p class="sub">One heart. One beautiful story. You. ❤️</p>
+<div class="frame"><img src="joy.jpg" alt="Joy's photo"></div>
+<p class="caption">🌹 Joy, you make my world brighter. 🌹</p>
+<section class="panel"><h2>🎵 Our song: Malaika</h2><p>Nyashinski • Tap play to listen</p>
+<audio controls preload="metadata"><source src="malaika.mp3" type="audio/mpeg">Your browser does not support audio playback.</audio>
+<p class="small">Add a legally obtained audio file named <b>malaika.mp3</b> to this same folder. Then refresh this page and press Play. The song file is not included in this pack.</p></section>
+<section class="panel"><h2>💌 A little message for Joy</h2><button id="letterBtn">Open my secret love letter 💗</button>
+<div id="letter">My dearest Joy,
+
+There is something special about you that makes ordinary moments feel beautiful. Your smile brings light to my day, and thinking of you gives my heart a reason to smile.
+
+This little page is one small way to remind you that you are appreciated, cherished, and loved.
+
+With love,
+Kelvoh ❤️🌹</div></section>
+<button id="showerBtn">Send a shower of hearts 💕</button><footer>MADE WITH LOVE BY KELVOH • FOR JOY, ALWAYS ❤️</footer></main>
+<script>
+function heart(){let e=document.createElement('span');e.className='float';e.textContent=['💗','💕','💖','❤️','🌹','✨'][Math.floor(Math.random()*6)];e.style.left=Math.random()*100+'%';e.style.fontSize=(16+Math.random()*24)+'px';e.style.animationDuration=(5+Math.random()*6)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),11500)}
+setInterval(heart,650);
+document.getElementById('letterBtn').onclick=()=>{let l=document.getElementById('letter'),open=l.style.display==='block';l.style.display=open?'none':'block';document.getElementById('letterBtn').textContent=open?'Open my secret love letter 💗':'Close my love letter 💌'};
+document.getElementById('showerBtn').onclick=()=>{for(let i=0;i<35;i++)setTimeout(heart,i*70)};
+</script></body></html>
